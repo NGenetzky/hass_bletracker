@@ -17,7 +17,7 @@ WORKDIR /usr/src/app
 # We copy and install 'requirements.txt' first, because it is less likely to
 # change than other source code, and so we can better utilize caching.
 COPY requirements.txt requirements.txt
-RUN pip install -r requirements.txt
+#RUN pip install -r requirements.txt
 
 COPY . ./
 
