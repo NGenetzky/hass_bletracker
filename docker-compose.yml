@@ -6,14 +6,20 @@ services:
   main:
     build:
       context: .
-    privileged: true
+    # privileged: true
     restart: always
-    network_mode: host
+
+    ## networking
+    # network_mode: host
+    ports:
+      - "80:80"
+    ##
+
     volumes:
       - 'resin-data:/data'
     labels:
-      io.balena.features.kernel-modules: '1'
-      io.balena.features.firmware: '1'
+      # io.balena.features.kernel-modules: '1'
+      # io.balena.features.firmware: '1'
       io.balena.features.dbus: '1'
-      io.balena.features.supervisor-api: '1'
-      io.balena.features.balena-api: '1'
+      # io.balena.features.supervisor-api: '1'
+      # io.balena.features.balena-api: '1'
