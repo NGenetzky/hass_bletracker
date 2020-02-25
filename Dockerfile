@@ -1,7 +1,7 @@
 # references:
 # - https://www.balena.io/docs/learn/develop/dockerfile/
 # FROM balenalib/%%BALENA_MACHINE_NAME%%-python:3-stretch-run
-FROM balenalib/amd64-python:3-stretch-run
+FROM balenalib/amd64-python:3-stretch-build
 
 RUN install_packages \
     bluetooth \
