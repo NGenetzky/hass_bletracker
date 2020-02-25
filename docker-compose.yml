@@ -6,9 +6,7 @@ services:
   main:
     build:
       context: .
-    # We will ignore this message for now:
-    # "Unable to start udev, container must be run in privileged mode to start udev!"
-    # privileged: true
+    privileged: true
     restart: always
 
     ## networking
