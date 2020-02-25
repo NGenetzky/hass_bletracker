@@ -1,3 +1,6 @@
 [submodule "balena-python-hello-world"]
 	path = balena-python-hello-world
 	url = https://github.com/balenalabs/balena-python-hello-world.git
+[submodule "bluepy"]
+	path = bluepy
+	url = https://github.com/IanHarvey/bluepy.git
